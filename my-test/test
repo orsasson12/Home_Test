@@ -1,0 +1,46 @@
+// import { StatusBar } from 'expo-status-bar';
+// import { FlatList, StyleSheet, Text, View,Image, ImageBackground } from 'react-native';
+// import axios from 'axios';
+// import { useEffect, useState } from 'react';
+// export default function App() {
+//   const [products, setProducts] = useState([])
+//   useEffect(() => {
+//     const fetchData = async () => {
+//       try {
+//         const { data } = await axios.get('https://pixabay.com/api/?key=25540812-faf2b76d586c1787d2dd02736&q=${sport}')
+//         setProducts(data.hits)
+//       } catch (error) {
+//         console.log(error);
+//       }
+//     }
+//     fetchData()
+//   }, [])
+//  const Item = ({item}) =>{
+//   return(
+//   <>
+//     <Image source={{ uri: item.webformatURL }} style={{height:50,width:50}}></Image>
+//     <Text>{item.views} views</Text>
+//     <Text>{item.downloads} downloads</Text>
+//     <Text>{item.collections} collections</Text>
+//   </>
+// )
+//  }
+//   return (
+//     <View style={styles.container}>
+//       <FlatList
+//         data={products}
+//         renderItem={Item}
+//         keyExtractor={item => item.id}
+//       />
+//     </View>
+//   );
+// }
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+// });
